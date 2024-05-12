@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower</title>
+<style>
+  .flower {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .petal {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: pink;
+    transform-origin: 50% 50%;
+  }
+  .petal:nth-child(1) {
+    top: 0;
+    left: 20px;
+    transform: rotate(45deg);
+  }
+  .petal:nth-child(2) {
+    bottom: 0;
+    left: 20px;
+    transform: rotate(-45deg);
+  }
+  .petal:nth-child(3) {
+    top: 20px;
+    right: 0;
+    transform: rotate(135deg);
+  }
+  .petal:nth-child(4) {
+    bottom: 20px;
+    right: 0;
+    transform: rotate(-135deg);
+  }
+  .center {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+
+<div class="flower">
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="center"></div>
+</div>
+
+</body>
+</html>

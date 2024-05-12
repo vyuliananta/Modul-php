@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kura-Kura</title>
+<style>
+  .turtle {
+    width: 200px; /* Lebar kura-kura */
+    height: 100px; /* Tinggi kura-kura */
+    position: relative;
+  }
+  .body {
+    width: 100px; /* Lebar badan kura-kura */
+    height: 60px; /* Tinggi badan kura-kura */
+    background-color: #4CAF50; /* Warna badan kura-kura */
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .head {
+    width: 60px; /* Lebar kepala kura-kura */
+    height: 60px; /* Tinggi kepala kura-kura */
+    background-color: #4CAF50; /* Warna kepala kura-kura */
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .eye {
+    width: 20px; /* Lebar mata */
+    height: 20px; /* Tinggi mata */
+    background-color: white; /* Warna mata */
+    border-radius: 50%;
+    position: absolute;
+  }
+  .eye.left {
+    top: 20px;
+    left: 20px;
+  }
+  .eye.right {
+    top: 20px;
+    right: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="turtle">
+  <div class="body"></div>
+  <div class="head">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+  </div>
+</div>
+
+</body>
+</html>
